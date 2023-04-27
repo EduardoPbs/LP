@@ -1,26 +1,47 @@
 import java.math.BigDecimal;
 
 public abstract class BaseAttributes {
-    private BigDecimal Vida;
-    private String Sexo;
-    private Tier tier;
-    private BigDecimal Dano;
-    private BigDecimal DanoCritico;
-    private BigDecimal TaxaCritica;
+    private  BigDecimal Vida;
+    private  BigDecimal Dano;
+    private  BigDecimal DanoCritico;
+    private  BigDecimal TaxaCritica;
+    private  Tier valoresAdicionais;
+
+
+//    public BaseAttributes(){}
 
     public BaseAttributes(
             BigDecimal Vida,
-            String Sexo,
-            Tier Tier,
             BigDecimal Dano,
             BigDecimal DanoCritico,
-            BigDecimal TaxaCritica
+            BigDecimal TaxaCritica,
+            Tier valoresAdicionais
+
     ){
         this.Vida = Vida;
-        this.Sexo = Sexo;
-        this.tier = Tier;
-        this.Dano = new BigDecimal("0.00");
-        this.DanoCritico = new BigDecimal("0.00");
-        this.TaxaCritica = new BigDecimal("0.00");
+        this.Dano = Dano;
+        this.DanoCritico = DanoCritico;
+        this.TaxaCritica = TaxaCritica;
+        this.valoresAdicionais = valoresAdicionais;
     }
+
+    public BigDecimal getVida() {
+        return Vida.add(valoresAdicionais.getVidaBase());
+    }
+
+    public BigDecimal getDano() {
+        return Dano.add(valoresAdicionais.getDanoBase());
+    }
+
+    public BigDecimal getDanoCritico() {
+        return DanoCritico.add(valoresAdicionais.getDanoCritico());
+    }
+
+    public BigDecimal getTaxaCritica() {
+        return TaxaCritica.add(valoresAdicionais.getTaxaCritica());
+    }
+
+    //public BigDecimal getValoresAdicionais() {
+    //    return valoresAdicionais;
+    //}
 }

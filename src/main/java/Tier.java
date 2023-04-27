@@ -2,15 +2,24 @@ import java.math.BigDecimal;
 
 public enum Tier {
     TIER3(
-            new BigDecimal("200"), new BigDecimal("120"), new BigDecimal("40"),new BigDecimal("10")
+            new BigDecimal("200"), // vida
+            new BigDecimal("120"), // dano
+            new BigDecimal("40"),  // critico
+            new BigDecimal("10")   // taxa
     ),
 
     TIER4(
-            new BigDecimal("350"), new BigDecimal("150"), new BigDecimal("45"), new BigDecimal("15")
+            new BigDecimal("350"),
+            new BigDecimal("150"),
+            new BigDecimal("45"),
+            new BigDecimal("15")
     ),
 
     TIER5(
-            new BigDecimal("500"), new BigDecimal("200"), new BigDecimal("50"), new BigDecimal("20")
+            new BigDecimal("500"),
+            new BigDecimal("200"),
+            new BigDecimal("50"),
+            new BigDecimal("20")
     );
 
     final BigDecimal vida;
