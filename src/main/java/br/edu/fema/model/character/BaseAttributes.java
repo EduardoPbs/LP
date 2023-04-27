@@ -1,3 +1,5 @@
+package br.edu.fema.model.character;
+
 import java.math.BigDecimal;
 
 public abstract class BaseAttributes {
@@ -8,7 +10,7 @@ public abstract class BaseAttributes {
     private  Tier valoresAdicionais;
 
 
-//    public BaseAttributes(){}
+//    public br.edu.fema.model.character.BaseAttributes(){}
 
     public BaseAttributes(
             BigDecimal Vida,

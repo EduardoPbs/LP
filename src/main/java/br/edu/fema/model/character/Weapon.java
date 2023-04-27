@@ -1,3 +1,5 @@
+package br.edu.fema.model.character;
+
 import java.math.BigDecimal;
 import java.util.List;
 

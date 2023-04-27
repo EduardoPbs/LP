@@ -1,3 +1,9 @@
+package main;
+
+import br.edu.fema.model.character.Personagem;
+import br.edu.fema.model.character.Tier;
+import br.edu.fema.model.character.Weapon;
+
 import java.math.BigDecimal;
 
 public class App {
@@ -5,7 +11,7 @@ public class App {
 
         Personagem p1 = new Personagem(
                 "Diluc",
-                Weapon.CLAYMORE.weaponType,
+                Weapon.CLAYMORE.getWeaponType(),
                 new BigDecimal("2000"), // vida
                 "Masc",
                 Tier.TIER5,

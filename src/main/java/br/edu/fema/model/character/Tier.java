@@ -1,3 +1,5 @@
+package br.edu.fema.model.character;
+
 import java.math.BigDecimal;
 
 public enum Tier {
