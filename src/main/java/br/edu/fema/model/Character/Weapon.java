@@ -1,7 +1,5 @@
-package br.edu.fema.model.character;
+package br.edu.fema.model.Character;
 
-import java.math.BigDecimal;
-import java.util.List;
 
 public enum Weapon {
     SWORD("Sword"),
@@ -14,9 +12,5 @@ public enum Weapon {
 
     Weapon(String weaponType){
         this.weaponType = weaponType;
-    }
-
-    public String getWeaponType(){
-        return this.weaponType;
     }
 }
