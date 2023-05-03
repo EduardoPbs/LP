@@ -20,7 +20,7 @@ public class Character extends BaseAttributes {
             BigDecimal critRate
 
     ){
-        super(health,damage, critDamage, critRate, tier);
+        super(health, damage, critDamage, critRate, tier);
         this.name = name;
         this.weapons = new ArrayList<>();
         this.sex = sex;
@@ -51,13 +51,13 @@ public class Character extends BaseAttributes {
 
     @Override
     public String toString() {
-        return ("  _________Personagem_________  " + newLine +
-                " | Nome: " + this.getName() + newLine +
-                " | Vida: " + this.getHealth() + newLine +
-                " | Arma: " + this.getWeapon() + newLine +
-                " | Dano: " + this.getDamage() + newLine +
-                " | Dano Critico: " + this.getCritDamage() + newLine +
-                " | Taxa Critica: " + this.getCritRate()
+        return ("  _________Character_________  " + newLine +
+                " | Name: " + this.getName() + newLine +
+                " | Health: " + this.getHealth() + newLine +
+                " | Weapon: " + this.getWeapon() + newLine +
+                " | Damage: " + this.getDamage() + newLine +
+                " | CritDamage: " + this.getCritDamage() + newLine +
+                " | CritRate: " + this.getCritRate()
                 );
     }
 
